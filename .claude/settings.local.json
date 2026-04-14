@@ -10,7 +10,9 @@
       "Bash(iconv:*)",
       "Bash(wc:*)",
       "Bash(tail:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\(JSON.stringify\\({...p.dependencies,...p.devDependencies},null,2\\)\\)\")"
     ]
   }
 }
