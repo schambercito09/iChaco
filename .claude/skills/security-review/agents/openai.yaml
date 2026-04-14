@@ -1,0 +1,7 @@
+interface:
+  display_name: "Revisión de Seguridad"
+  short_description: "Checklist de seguridad completo y detección de vulnerabilidades"
+  brand_color: "#EF4444"
+  default_prompt: "Ejecutar checklist de seguridad: secrets, validación de input, prevención de inyección"
+policy:
+  allow_implicit_invocation: true
