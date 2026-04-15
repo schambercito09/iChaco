@@ -12,7 +12,9 @@
       "Bash(tail:*)",
       "Bash(npx tsc:*)",
       "Bash(echo \"EXIT:$?\")",
-      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\(JSON.stringify\\({...p.dependencies,...p.devDependencies},null,2\\)\\)\")"
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\(JSON.stringify\\({...p.dependencies,...p.devDependencies},null,2\\)\\)\")",
+      "Bash(npx eslint:*)",
+      "Bash(node -e \" const docs = require\\('fs'\\).readFileSync\\('./node_modules/next/dist/docs/01-app/03-api-reference/04-functions/cookies.md', 'utf8'\\).slice\\(0,2000\\) console.log\\(docs\\) \")"
     ]
   }
 }
