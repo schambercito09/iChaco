@@ -106,8 +106,9 @@ export async function buscarVariantes(
   return unique
     .filter((v) => conStock.has((v as { id: string }).id))
     .map((v) => {
-      const { producto: _, ...variante } = v as Record<string, unknown>
-      return variante as unknown as VarianteProducto
+      const vObj = { ...(v as Record<string, unknown>) }
+      delete vObj.producto
+      return vObj as unknown as VarianteProducto
     })
     .slice(0, 20)
 }
